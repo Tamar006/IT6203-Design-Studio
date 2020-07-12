@@ -1,0 +1,26 @@
+   
+     :host {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        }
+    
+        mat-form-field {
+        display: inline-block;
+        width: 20%;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 12px 30px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        }
+    
+        
+        input {
+        width:100%;
+        padding: 10px;
+        margin-left: -8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        }

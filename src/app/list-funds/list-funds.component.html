@@ -1,0 +1,20 @@
+<div>
+    <ul *ngFor ="let volunteerFund of volunteers let i = index">
+      <li> {{volunteerFund._id}}
+        <button *ngIf="volunteerFund.donationDate && volunteerFund.donationAmount" mat-button color="warn" (click)="onDeleteDonation(volunteerFund._id, volunteerFund)">DELETE Donation</button><br />
+            <b>Volunteer ID: </b> {{volunteerFund.volunteerID}} <br />
+            <b>First Name: </b> {{volunteerFund.firstName}} <br />
+            <b>Last Name: </b> {{volunteerFund.lastName}} <br />
+            <b>Street: </b>{{volunteerFund.street}} <br />
+            <b>City: </b>{{volunteerFund.city}} <br />
+            <b>State: </b>{{volunteerFund.state}} <br />
+            <b>Zip Code: </b>{{volunteerFund.zip}} <br />
+            <b>Phone number: </b>{{volunteerFund.phone}} <br />
+            <b>Email: </b>{{volunteerFund.email}} <br />
+            <ng-container *ngIf="volunteerFund.donationDate && volunteerFund.donationAmount">
+              <b>Date: </b>{{volunteerFund.donationDate}} <br />
+              <b>Amount: </b>{{volunteerFund.donationAmount}} <br />
+            </ng-container>
+          </li>
+    </ul>
+</div>

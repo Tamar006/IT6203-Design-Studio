@@ -1,0 +1,22 @@
+<div>
+        <ul *ngFor ="let volunteer of volunteers let i = index">
+          <li> {{volunteer._id}} <button mat-button color="warn" (click)="onDelete(volunteer._id)">DELETE</button>
+                <button mat-button color="accent" [routerLink]="['/editVolunteer', volunteer._id]">UPDATE</button><br />
+                <b>Volunteer ID: </b> {{volunteer.volunteerID}} <br />
+                <b>First Name: </b> {{volunteer.firstName}} <br />
+                <b>Last Name: </b> {{volunteer.lastName}} <br />
+                <b>Street: </b>{{volunteer.street}} <br />
+                <b>City: </b>{{volunteer.city}} <br />
+                <b>State: </b>{{volunteer.state}} <br />
+                <b>Zip Code: </b>{{volunteer.zip}} <br />
+                <b>Phone number: </b>{{volunteer.phone}} <br />
+                <b>Email: </b>{{volunteer.email}} <br />
+                <b>Emergency Contact Name: </b>{{volunteer.emergencyContactName}} <br />
+                <b>Emergency Contact Phone number: </b>{{volunteer.emergencyContactPhone}} <br />
+                <b>Days Available: </b>{{volunteer.days}} <br />
+                <b>From: </b>{{volunteer.startTime}} <br />
+                <b>To: </b>{{volunteer.endTime}} <br />
+                <b>Project Interest: </b>{{volunteer.projectInterest}} <br />
+              </li>
+        </ul>
+</div>

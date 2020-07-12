@@ -1,0 +1,65 @@
+<div>
+<h1>{{mode}} Volunteer Form</h1>
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <mat-form-field>
+   <input matInput placeholder="Volunteer ID" id="volunteerID" [(ngModel)]="volunteerID" name="volunteerID" >
+  </mat-form-field>
+  
+  <br />
+  <mat-form-field>
+    <input matInput placeholder="First Name" id="firstname" [(ngModel)]="firstName" name="firstname" >
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Last Name" id="lastname" [(ngModel)]="lastName" name="lastname" >
+  </mat-form-field>
+
+  <br />
+  <mat-form-field>
+      <input matInput placeholder="Street Address" id="street" [(ngModel)]="street" name="street" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="City" id="city" [(ngModel)]="city" name="city" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="State" id="state" [(ngModel)]="state" name="state" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="Zip Code" id="zip" [(ngModel)]="zip" name="zip" >
+  </mat-form-field>
+
+  <br />
+  <mat-form-field>
+      <input matInput placeholder="Phone Number" id="phone" [(ngModel)]="phone" name="phone" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="Email Address" id="email" [(ngModel)]="email" name="email" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="Emergency Contact Name" id="emergencyContactName" [(ngModel)]="emergencyContactName" name="emergencyContactName" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="Emergency Contact Phone Number" id="emergencyContactPhone" [(ngModel)]="emergencyContactPhone" name="emergencyContactPhone" >
+  </mat-form-field>
+
+  <br />
+  <h3>Please enter the days and times available, and which project(s) you are interested in volunteering:</h3>
+  <mat-form-field>
+      <input matInput placeholder="Days Available" id="days" [(ngModel)]="days" name="days" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="From: " id="startTime" [(ngModel)]="startTime" name="startTime" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="To: " id="endTime" [(ngModel)]="endTime" name="endTime" >
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="Project Name" id="projectInterest" [(ngModel)]="projectInterest" name="projectInterest" >
+  </mat-form-field>
+
+
+  <p>
+  <button type="submit" mat-raised-button color="primary">Submit</button>
+  </p>
+</form>
+</div>
+        

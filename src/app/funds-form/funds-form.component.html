@@ -1,0 +1,51 @@
+<div>
+    <h1>{{mode}} Funds Management Form</h1>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+      <mat-form-field>
+       <input matInput placeholder="Volunteer ID" id="volunteerID" [(ngModel)]="volunteerID" name="volunteerID" >
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <input matInput placeholder="First Name" id="firstname" [(ngModel)]="firstName" name="firstname" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Last Name" id="lastname" [(ngModel)]="lastName" name="lastname" >
+      </mat-form-field>
+
+      <br />
+      <mat-form-field>
+          <input matInput placeholder="Street Address" id="street" [(ngModel)]="street" name="street" >
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="City" id="city" [(ngModel)]="city" name="city" >
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="State" id="state" [(ngModel)]="state" name="state" >
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Zip Code" id="zip" [(ngModel)]="zip" name="zip" >
+      </mat-form-field>
+
+      <br />
+      <mat-form-field>
+          <input matInput placeholder="Phone Number" id="phone" [(ngModel)]="phone" name="phone" >
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Email Address" id="email" [(ngModel)]="email" name="email" >
+      </mat-form-field>
+
+      <br />
+      <h3>Please enter a donation amount:</h3>
+      <mat-form-field>
+          <input matInput placeholder="Donation amount" id="amount" [(ngModel)]="donationDate" name="amount" >
+      </mat-form-field>
+      
+      <mat-form-field  style="width: 200px;">
+          <input matInput placeholder="Date" type="date" id="date" [(ngModel)]="donationAmount" name="date" >
+      </mat-form-field>
+ <!--   On this form, you're able to enter a donation amount, delete donation amount, displaying month to date and year to date total with database integration of input.
+ -->         <p>
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+      </p>
+    </form>
+    </div>
